@@ -1,0 +1,13 @@
+<!--pages/list/list.wxml-->
+
+<scroll-view >
+<view class='logo' style='background-image: url({{hotData.logo}});'>
+<text class='text'>{{hotData.dissname}}</text>
+</view>
+<view wx:for="{{songList}}" class='songlist'>
+ <view bindtap='toplay' data-songmid='{{item.songmid}}' data-albummid='{{item.albummid}}' data-item='{{item}}'>
+  <view class='name'><text>{{item.songname}}</text></view> 
+  <view class='auth'><text>{{item.singer[0].name}}·</text><text>{{item.albumname}} </text> </view>
+ </view>
+</view>
+</scroll-view>

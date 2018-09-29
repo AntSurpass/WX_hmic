@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/list/list",
+    "pages/play/play"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3b200c",
+    "navigationBarTitleText": "hmic",
+    "navigationBarTextStyle": "#c4c4c4",
+    "backgroundColor": "#995446",
+    "enablePullDownRefresh": false
+  }
+}

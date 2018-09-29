@@ -1,0 +1,27 @@
+<view class='bgimg' style='background-image: url({{imagesrc}});'>
+</view>
+<view class='discript'>
+   <view class='songname'>{{songname}}</view>
+   <view class='singername'>{{singername}}</view>
+</view>
+<view class='rotato'>
+  <view class='top'>
+    <view class='top-bg' style='animation-play-state: {{aniState}};'>
+      <image src='{{imagesrc}}'></image>
+    </view>
+  </view>
+</view>
+<view class='play'>
+<view class='slider'>
+<slider bindchange="sliderchange" value='{{curtime}}' min="0" max="{{datime}}" block-size='16' block-color='#de8100' activeColor='#de8100' step='0.01'/>
+</view>
+<view class='timer'><text class='left'>{{sheowcurtime}}</text> <text>{{showdatime}}</text></view>
+ <view class='btn'>
+  <view class='p2s' style='background-image: url({{playimage}});' bindtap="audioPlay">
+  </view>
+ </view>
+</view>
+<!-- <button type="primary" bindtap="audioPlay">播放</button>
+<button type="primary" bindtap="audioPause">暂停</button>
+<button type="primary" bindtap="audio14">设置当前播放时间为14秒</button>
+<button type="primary" bindtap="audioStart">回到开头</button> -->

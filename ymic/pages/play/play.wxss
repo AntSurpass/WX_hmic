@@ -1,0 +1,96 @@
+/* pages/play/play.wxss */
+
+.bgimg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .6;
+  filter: blur(20px);
+}
+.discript {
+    position: relative;
+    text-align: center;
+     top: 40rpx;
+}
+.discript .songname{
+  color: #de8100;
+  font-size: 40rpx;
+}
+.discript .singername{
+  color: #de8100;
+  font-size: 32rpx;
+}
+.rotato {
+  position: relative;
+  top: 200rpx;
+}
+
+.rotato .top {
+  position: absolute;
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.rotato .top .top-bg {
+  background-color:rgba(255, 255, 255, 0.3);
+  font-size: 0;
+  padding: 20rpx;
+  margin: 0 auto;
+  width: 80%;
+  animation: roto 20s linear infinite;
+  border-radius: 50%;
+}
+
+.rotato .top image {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+}
+
+.play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 300rpx;
+}
+.play .slider{
+  width: 80%;
+}
+.play .timer{
+  width: 80%;
+display: flex;
+justify-content:space-between;
+  font-size: 20rpx;
+  color: #de8100;
+}
+.play .btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.play .btn .p2s{
+  height: 96rpx;
+  width: 96rpx;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+
+
+@keyframes roto
+{
+0% {
+    transform: rotate(0);
+}
+100% {
+    transform: rotate(1turn);
+}
+}

@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="wapper">
+<view class='title'>热门歌单</view>
+  <scroll-view>
+    <view wx:for="{{hotSong}}" class='hot'>
+      <view class='hotimg'>
+        <image src='{{item.imgurl}}'></image>
+      </view>
+      <view class='hottitle' bindtap='tolist' data-hi="{{item.dissid}}">
+        <view class='hotname'>{{item.creator.name}}</view>
+        <view class='disnmae'>{{item.dissname}}</view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

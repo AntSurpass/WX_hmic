@@ -1,0 +1,39 @@
+/**index.wxss**/
+.wapper {  
+  background: #3b200c;
+}
+.hot {
+  display: flex;
+  padding: 40rpx;
+  padding-top: 0;
+}
+.title{
+  text-align: center;
+  height: 120rpx;
+  line-height: 120rpx;
+  font-size: 28rpx;
+  color:#de8100;
+}
+.hot .hotimg {
+  flex: 0 0 60px;
+  width: 60px;
+  padding-right: 20px;
+}
+
+.hot .hotimg image {
+  width: 60px;
+  height: 60px;
+}
+.hottitle {
+  flex: 1;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 28rpx;
+}
+.hottitle .hotname{
+  padding-bottom: 30rpx;
+  color: #fff;
+}
+.hottitle .disnmae{
+  color: rgba(255,255,255,0.3);
+}
